@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">OurIdeas</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="name">OurIdeas.blog</string>
+    <string name="action_account">Account</string>
+    <string name="politics">Politique</string>
+    <string name="filter">Filter</string>
+    <string name="no_internet_connection">You are not connected to internet</string>
+
+    <string name="days_ago">d ago</string>
+    <string name="hours_ago">h ago</string>
+    <string name="minutes_ago">min ago</string>
+    <string name="new_subject">New subject</string>
+    <string name="title_description_empty">Title or description can not be empty</string>
+    <string name="one_domain">You must select at least one domain</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="what_do_you_want">What do you want to do?</string>
+    <string name="logout">Logout</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="must_fill">You must fill all the form</string>
+    <string name="passwords">Your passwords are different</string>
+    <string name="registration">Registration in progress</string>
+    <string name="username_length">Username must have at least 5 characters</string>
+    <string name="password_length">Password must have at least 6 characters</string>
+    <string name="lack_ideas">There is no any idea about this subject</string>
+    <string name="greeting">Hi,</string>
+    <string name="need_authentication">You need to sign in perform this action</string>
+    <string name="wait">Please wait</string>
+    <string name="new_idea">New Idea</string>
+    <string name="save">Save</string>
+    <string name="new_subject_label">New Subject</string>
+    <string name="title">Title</string>
+    <string name="description_empty">Description must not be empty</string>
+    <string name="status_opened">Opened</string>
+    <string name="status_rejected">Rejected</string>
+    <string name="tricks">Tricks</string>
+    <string name="copyright">Copyright 2019, OurIdeas.blog, all rights reserved</string>
+    <string name="trick_ideas">Click on the subject title to display all ideas about it</string>
+    <string name="support">Support</string>
+    <string name="support_label">If you have any question (Ex: you can not find any domain corresponding to your subject), fill out the form below and submit it</string>
+    <string name="submit">Submit</string>
+    <string name="no_subjects">You have not created any subject</string>
+
+</resources>

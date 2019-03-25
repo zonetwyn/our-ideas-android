@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zonetwyn.projects.ourideas.activities.MainActivity">
+    <item
+        android:id="@+id/action_actions"
+        android:orderInCategory="100"
+        android:title="@string/action_account"
+        android:icon="@drawable/ic_account_black"
+        app:showAsAction="always" />
+</menu>
