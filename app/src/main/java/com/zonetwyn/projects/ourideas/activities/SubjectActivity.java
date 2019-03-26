@@ -16,6 +16,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +40,7 @@ public class SubjectActivity extends AppCompatActivity {
     private IdeaViewModel viewModel;
     private Subject subject;
 
+    private TextView description;
     private SwipeRefreshLayout refresh;
     private RecyclerView recyclerView;
 
@@ -83,6 +85,12 @@ public class SubjectActivity extends AppCompatActivity {
         toolbarTitle.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/poppins/Poppins-Medium.otf"));
 
         // init views
+        description = findViewById(R.id.description);
+        if (subject.getDescription().length() > 200) {
+            description.setText(subject.getDescription());
+        } else {
+            description.setVisibility(View.GONE);
+        }
         recyclerView = findViewById(R.id.recyclerView);
         refresh = findViewById(R.id.refresh);
 
