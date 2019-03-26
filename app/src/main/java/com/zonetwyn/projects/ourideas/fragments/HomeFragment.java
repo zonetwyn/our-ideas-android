@@ -170,8 +170,27 @@ public class HomeFragment extends Fragment {
     }
 
     private void insertSubjects(List<Subject> subjects) {
-        this.subjects.addAll(subjects);
-        adapter.notifyDataSetChanged();
+        List<Subject> list = new ArrayList<>();
+        for (Subject subject : subjects) {
+            if (!contains(subject)) {
+                list.add(subject);
+            }
+        }
+        if (list.size() > 0) {
+            this.subjects.addAll(list);
+            adapter.notifyDataSetChanged();
+        }
+    }
+
+    private boolean contains(Subject subject) {
+        boolean contains = false;
+        for (Subject s : subjects) {
+            if (s.getId().equals(subject.getId())) {
+                contains = true;
+                break;
+            }
+        }
+        return contains;
     }
 
     private void loadMore() {

@@ -22,7 +22,7 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
 
-    String BASE_URL = "https://mysterious-garden-51494.herokuapp.com/api/v1/";
+    String BASE_URL = "https://our-ideas-api.herokuapp.com/api/v1/";
 
     @GET("subjects")
     Call<SubjectResponse> getSubjects(@Query("page") int page);

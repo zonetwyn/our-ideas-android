@@ -11,6 +11,13 @@
     <include
         layout="@layout/appbar" />
 
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:padding="16dp" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

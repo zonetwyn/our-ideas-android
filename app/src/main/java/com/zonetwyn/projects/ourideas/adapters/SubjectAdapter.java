@@ -109,7 +109,7 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
         viewHolder.likes.setTypeface(semiBold);
 
         viewHolder.title.setText(subject.getTitle());
-        viewHolder.description.setText(subject.getDescription());
+        viewHolder.description.setText(truncate(subject.getDescription()));
         viewHolder.ideasCount.setText(String.valueOf(subject.getIdeasCount()));
         viewHolder.likes.setText(String.valueOf(subject.getLikes()));
 
@@ -206,6 +206,13 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
                 }
             }
         });
+    }
+
+    private String truncate(String value) {
+        if (value.length() > 200) {
+            return value.substring(0, 200) + "...";
+        }
+        return value;
     }
 
     private void reply(Subject subject) {

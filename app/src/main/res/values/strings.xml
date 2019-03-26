@@ -44,5 +44,6 @@
     <string name="support_label">If you have any question (Ex: you can not find any domain corresponding to your subject), fill out the form below and submit it</string>
     <string name="submit">Submit</string>
     <string name="no_subjects">You have not created any subject</string>
+    <string name="connexion">Connexion in progress</string>
 
 </resources>

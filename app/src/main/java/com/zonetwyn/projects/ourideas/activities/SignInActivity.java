@@ -114,7 +114,7 @@ public class SignInActivity extends AppCompatActivity {
 
     private void initProgressDialog() {
         progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage(getString(R.string.registration));
+        progressDialog.setMessage(getString(R.string.connexion));
         progressDialog.setIndeterminate(false);
         progressDialog.setCancelable(true);
     }
